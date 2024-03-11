@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Atividade</title>
+    <style>
+        body {
+            background-color: darkgoldenrod;
+            color: white; /* Adicionado para melhor legibilidade */
+        }
+    </style>
 </head>
-<style>
-    body {
-        background-color: darkgoldenrod;
-    }
-</style>
 <body>
     <h1>Formulário de Cadastro</h1>
     <form>
-        <label for="name">Seu nome</label>
-        <input id="nome" type="nome" />
+        <label for="nome">Seu nome:</label>
+        <input id="nome" type="text" name="nome" required> <!-- Corrigido o tipo do input -->
         <br>
-        <label for="email"> Seu Email</label>
-        <input id="email" type="email" />
+        <label for="email">Seu Email:</label>
+        <input id="email" type="email" name="email" required> <!-- Corrigido o tipo do input e adicionado o atributo 'name' -->
         <br>
-        <label for="senha"> Sua senha</label>
-        <input id="senha" type="password"/>
-
+        <label for="senha">Sua senha:</label>
+        <input id="senha" type="password" name="senha" required> <!-- Corrigido o tipo do input e adicionado o atributo 'name' -->
+        <br>
+        <button type="submit">Enviar</button> <!-- Adicionado um botão de envio -->
+    </form>
 </body>
 </html>
